@@ -1,0 +1,102 @@
+*{
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.to-do h2{
+    display: flex;
+    color: #5476ac;
+    margin-bottom: 20px;
+    align-items: center;
+    font-family: sans-serif;
+}
+.to-do h2 img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(226, 235, 244);
+}
+input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(226, 235, 244);
+    border-radius: 30px;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 16px 50px;
+    font-size: 16px;
+    background: #ff5945;
+    border-radius: 30px;
+}
+ul li{
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    position: relative;
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-image: url(img/Radio\ Button\ Unchecked\ icons\ for\ free\ download\ _\ Freepik.jfif);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+.checked::before{
+    background-image: url(img/tick.jfif);
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+ul li span:hover{
+    color: red;
+}
+.ru{
+    align-items: center;
+}
